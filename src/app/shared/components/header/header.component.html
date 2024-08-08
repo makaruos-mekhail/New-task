@@ -1,0 +1,12 @@
+<header class="Header mb-0 d-flex justify-content-end">
+
+  <input type="search" name="" placeholder="search User By ID" id="" class="me-3" *ngIf="isHomeRoute" [(ngModel)]="userIdInput">
+
+  <button class="btn button1" *ngIf="isHomeRoute" (click)="searchUser()">
+    Search User
+  </button>
+
+  <button class="btn button1" type="button" routerLink="/home" *ngIf="!isHomeRoute">
+    All Users
+  </button>
+</header>

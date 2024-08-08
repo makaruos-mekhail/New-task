@@ -1,0 +1,21 @@
+@import "maxins";
+@import "variables";
+@import "font";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  background-color: white !important;
+  min-height: 100%;
+  overflow: auto;
+}

@@ -1,0 +1,21 @@
+<section>
+  <div class="row m-0 p-0 d-flex justify-content-evenly pt-5">
+    <div class="col-5 d-flex">
+      <img [src]="dataUser?.avatar" class="w-75 m-auto" alt="" />
+    </div>
+    <div class="col-5 h-100 m-auto">
+      <div class="">
+        <ul>
+          <li><i class="fa-regular fa-circle-check"></i> {{ dataUser?.id }}</li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>
+            {{ dataUser?.first_name }} {{ dataUser?.last_name }}
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i> {{ dataUser?.email }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

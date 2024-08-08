@@ -1,0 +1,24 @@
+@import "../../../../../assets/style/main.scss";
+
+ul {
+  list-style-type: none;
+
+  li {
+    font-size: 22px;
+    color: #707074;
+    font-family: var(--Plus_Jakarta);
+    @include mobile-only {
+      font-size: 15px;
+    }
+    
+    i {
+      color: #6ed090;
+      font-size: 18px;
+      margin: 0px 10px;
+
+      @include mobile-only {
+        font-size: 15px;
+      }
+    }
+  }
+}

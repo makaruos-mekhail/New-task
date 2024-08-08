@@ -1,0 +1,20 @@
+@import "../../../../assets/style/main.scss";
+
+.Header {
+  background-color: var(--light-blue);
+  padding-inline: 2rem;
+  padding: 1rem;
+
+
+  .button1 {
+    border: 1px solid white;
+    color: var(--white);
+    padding: 5px;
+  }
+
+  input{
+    outline: none;
+    box-shadow: none;
+    padding: 5px;
+  }
+}

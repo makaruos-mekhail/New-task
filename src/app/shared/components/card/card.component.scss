@@ -1,0 +1,39 @@
+@import "../../../../assets/style/main.scss";
+
+.card_Style {
+  background-color: var(--white2);
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+
+  i {
+    color: #6ed090;
+    font-size: 18px;
+    margin: 0px 10px;
+    @include mobile-only {
+      font-size: 15px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #909096;
+    font-family: var(--Plus_Jakarta);
+    @include mobile-only {
+      font-size: 15px;
+    }
+  }
+  span{
+    font-size: 18px;
+    color: #909096;
+    font-family: var(--Plus_Jakarta);
+    @include mobile-only {
+      font-size: 12px;
+    }
+  }
+  .Button{
+    border: 1px solid var(--light-blue);
+    border-radius: 5px;
+    color: var(--light-blue);
+    padding: 5px;
+  }
+}

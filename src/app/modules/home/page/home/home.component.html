@@ -1,0 +1,27 @@
+<section class="Home d-flex justify-content-center">
+  <app-card [data]="data?.data"></app-card>
+</section>
+
+<div class="d-flex justify-content-center mt-5 mb-5">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li *ngIf="data?.page > 1" (click)="Pagination(data?.page - 1)" class="page-item">
+        <button class="page-link" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </button>
+      </li>
+
+      <li *ngFor="let i of [].constructor(data?.total_pages); let idx = index"
+        [ngClass]="{'active': idx + 1 === data?.page}" class="page-item" (click)="Pagination(idx + 1)">
+        <button class="page-link">{{ idx + 1 }}</button>
+      </li>
+
+      <li *ngIf="data?.page < data?.total_pages" (click)="Pagination(data?.page + 1)" class="page-item">
+        <button class="page-link" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </button>
+      </li>
+    </ul>
+
+  </nav>
+</div>
